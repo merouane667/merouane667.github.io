@@ -1,0 +1,1114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+.logo_connexion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.logo_connexion .logo {
+    width: 100px;
+    margin-left: 25px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+header .signup {
+    text-align: end;
+    margin-top: 44px;
+}
+
+.signup .signup_link {
+    text-decoration: none;
+    color: #0065FC;
+    font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 9px 25px 0 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.navigation {
+    width: 100vw;
+    margin-top: 25px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navigation .nav_link1,
+.navigation .nav_link2 {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+
+
+}
+
+.navigation .nav_link1 {
+    color: #0065FC;
+    grid-column: 1/2;
+}
+
+.navigation .nav_link2 {
+    color: rgba(0, 0, 0, 0.8);
+    grid-column: 2/3;
+}
+
+.nav_link1::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #0065FC;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+
+}
+
+.nav_link2::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #F2F2F2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+/* first section */
+
+.section1 {
+    margin-top: 40px;
+}
+
+.section1 h1 {
+    margin-left: 25px;
+    width: 85%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+}
+
+.section1 h3 {
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 85%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.input {
+    margin-top: 40px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    width: 320px;
+}
+
+#search {
+    border: none;
+    height: 50px;
+    width: 220px;
+    font-size: 1.2rem;
+    text-indent: 10px;
+
+}
+
+#search:focus {
+    outline-style: none
+}
+
+.icon1,
+.icon2 {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon2 {
+    background-color: #0065FC;
+    color: #FFF;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.section1 .input .icon2 .para {
+    display: none;
+}
+
+.icon1 {
+    background-color: #F2F2F2;
+    color: #000;
+    border-radius: 15px;
+}
+
+#search::placeholder {
+    color: #000;
+    font-size: 1.2rem;
+    text-indent: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.section1 h2 {
+    margin: 40px 0 25px 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.filtres {
+    margin: 0 0 0 25px;
+}
+
+.filtres a {
+    display: inline-block;
+    width: 180px;
+    height: 48px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 0 5px 5px 0;
+    border: 3px solid #F2F2F2;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.filtres a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px -2px #0006;
+    background-color: #0065fc;
+    color: #deebff;
+}
+
+.filtres a .filtre_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 100%;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: -4px;
+}
+
+.filtres a .filtre_text {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+#second {
+    width: 140px;
+}
+
+#third {
+    width: 173px;
+}
+
+#fourth {
+    width: 220px;
+}
+
+.section1 .info {
+    margin: 25px 0 0 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    display: flex;
+
+}
+
+.section1 .info .info_circle {
+    color: #0065FC;
+    font-size: 1.4rem;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    margin-right: 5px;
+    position: relative;
+}
+
+.section1 .info .info_text {
+    margin: 6px 0px 0px 6px;
+}
+
+.info .info_circle .fa-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+}
+
+/* seconde section */
+.section2 {
+    background-color: #F2F2F2;
+    padding-bottom: 35px;
+}
+
+.section2 .popular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85vw;
+    margin: 35px 0 25px 25px;
+    padding-top: 35px;
+
+}
+
+.section2 .popular h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.section2 .popular i {
+    font-size: 1.4rem;
+}
+
+.section2 .card {
+    height: 120px;
+    background-color: #FFF;
+    border-radius: 20px;
+    margin: 0 25px 10px 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 1px;
+    position: relative;
+}
+
+.section2 .card img {
+    height: 100%;
+    width: 42%;
+    border-radius: 20px 0 0 20px;
+    padding: 5px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section2 .card .card-content {
+    height: 95%;
+    width: 58%;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section2 .card .card-content h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 80%;
+    margin: 10px 0 10px 10px;
+}
+
+.section2 .card .card-content p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0 0 0 10px;
+}
+
+.section2 .card .card-content .stars {
+    font-size: 0.6rem;
+    margin: 25px 0 0 10px;
+    color: #0065FC;
+}
+
+.section2 .seconde_card .star5,
+.section2 .third_card .star5 {
+    color: rgb(188 173 173 / 51%);
+}
+
+/* third section */
+
+.section3 h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 40px 0px 25px 25px;
+}
+
+.section3 .card {
+    height: 200px;
+    border-radius: 20px;
+    margin: 0 25px 20px 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 1px;
+    position: relative;
+}
+
+.section3 .card img {
+    height: 65%;
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.section3 .card .card-content {
+    height: 35%;
+    width: 100%;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.section3 .card .card-content h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    width: 80%;
+    margin: 5px 0 5px 15px;
+
+}
+
+.section3 .card .card-content p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0 0 0 15px;
+}
+
+.section3 .card .card-content .stars {
+    font-size: 0.6rem;
+    margin: 5px 0 0 15px;
+    color: #0065FC;
+}
+
+.section3 .card1 .star5,
+.section3 .card3 .star5,
+.section3 .card5 .star5 {
+    color: rgb(188 173 173 / 51%);
+}
+
+.section3 .card4 .star4,
+.section3 .card4 .star5 {
+    color: rgb(188 173 173 / 51%);
+}
+
+.section3 .see_more {
+    text-decoration: none;
+    color: #000;
+    margin: 25px 0 25px 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* fourth section */
+.section4 h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 40px 0px 25px 25px;
+}
+
+.section4 .card {
+    height: 200px;
+    border-radius: 20px;
+    margin: 0 25px 20px 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 1px;
+    position: relative;
+}
+
+.section4 .card img {
+    height: 75%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.section4 .card h3 {
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 80%;
+    margin: 5px 0 15px 15px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #F2F2F2;
+    margin-top: 35px;
+}
+
+.footer>div {
+    padding: 25px 0 15px 25px;
+
+}
+
+.footer>div>h2 {
+    margin-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.footer>div>a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* animation on hover  */
+.section4 .card {
+    overflow: hidden;
+}
+
+.section4 .card h3 {
+    transition: color .5s ease;
+}
+
+.section4 a:hover h3 {
+    color: #0065FC;
+}
+
+.section3 .card {
+    overflow: hidden;
+}
+
+.section3 .card .card-content h3 {
+    transition: color .5s ease;
+}
+
+.section3 .card img {
+    transition: transform .5s ease;
+}
+
+.section3 a:hover img {
+    transform: scale(1.068);
+}
+
+.section3 a:hover .card-content h3 {
+    color: #0065FC;
+}
+
+.section2 .card {
+    overflow: hidden;
+}
+
+.section2 .card .card-content h3 {
+    transition: color .5s ease;
+}
+
+.section2 .card img {
+    transition: transform .5s ease;
+}
+
+.section2 a:hover img {
+    transform: scale(1.1);
+}
+
+.section2 a:hover .card-content h3 {
+    color: #0065FC;
+}
+
+
+/* tablet design */
+
+@media only screen and (min-width:705px) and (max-width:1199px) {
+    .section1 .input .icon2 i {
+        display: none;
+    }
+
+    .section1 .input {
+        width: 400px;
+    }
+
+    .section1 .input .icon1 {
+        border-radius: 15px 0 0 15px;
+    }
+
+    .section1 .input .icon2 {
+        width: 135px;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .section1 .input .icon2 .para {
+        display: block;
+        color: #FFF;
+        font-size: 1.2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+
+    .section2 .popular {
+        width: 92vw;
+    }
+
+    .section2 .card {
+        width: 31%;
+        display: inline-block;
+        margin: 0 0 0 10px;
+
+    }
+
+    .section2 {
+        border-radius: 20px;
+    }
+
+
+    .section2 .popular {
+        width: 92vw;
+    }
+
+    .section2 .card .card-content h3 {
+        width: 100%;
+        margin: 10px 0 10px 1px;
+        font-size: 0.9rem;
+    }
+
+    .section2 .card .card-content p {
+
+        margin: 0 0 0 1px;
+    }
+
+    .section2 .card .card-content .stars {
+        margin: 25px 0 0 1px;
+    }
+
+    .section3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 1fr 1fr 100px;
+        gap: 10px;
+        padding: 25px;
+        margin-top: 25px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+
+    .section3 .card {
+        margin: 0;
+    }
+
+    .section3 .card .card-content h3 {
+        font-size: 0.8rem;
+    }
+
+    .section3>h2 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .section3>.card1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .section3>.card2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .section3>.card3 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .section3>.card4 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .section3>.card5 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .section3>.card6 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .section3>.see_more {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 60%;
+    }
+
+
+    /* fourth section */
+    .section4 .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 10px;
+        width: 100%;
+        height: 350px;
+        padding: 25px;
+    }
+
+    .section4 .card h3 {
+        font-size: 0.8rem;
+    }
+
+    .section4 .cards .card {
+        height: 100%;
+        margin: 0;
+    }
+
+
+    .section4 .cards .card1 {
+        grid-row: 1/10;
+        grid-column: 1/2;
+    }
+
+    .section4 .cards .card1 img {
+        height: 86%;
+    }
+
+    .section4 .cards .card2 {
+        grid-row: 1/6;
+        grid-column: 2/3;
+    }
+
+    .section4 .cards .card2 img {
+        height: 73%;
+
+    }
+
+    .section4 .cards .card3 {
+        grid-row: 6/10;
+        grid-column: 2/3;
+    }
+
+    .section4 .cards .card3 img {
+        height: 64%;
+    }
+
+    .section4 .cards .card4 {
+        grid-row: 1/10;
+        grid-column: 3/4;
+    }
+
+    .section4 .cards .card4 img {
+        height: 85%;
+    }
+
+    .section4 .cards .card5 {
+        grid-row: 1/5;
+        grid-column: 4/5;
+    }
+
+    .section4 .cards .card5 img {
+        height: 65%;
+    }
+
+    .section4 .cards .card6 {
+        grid-row: 5/10;
+        grid-column: 4/5;
+    }
+
+    .section4 .cards .card6 img {
+        height: 72%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+
+    .footer div {
+        width: 440px;
+    }
+
+}
+
+/* desktop design */
+@media only screen and (min-width:1200px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    header .logo_connexion {
+        grid-column: 1/2;
+    }
+
+    header .navigation {
+        grid-column: 6/8;
+        grid-row: 1/2;
+        width: 100%;
+        margin: 0;
+    }
+
+    header .navigation .nav_link1,
+    header .navigation .nav_link2 {
+        padding: 40px 0;
+    }
+
+    header .navigation .nav_link1::after {
+        top: 0;
+    }
+
+    header .navigation .nav_link2::after {
+        display: none;
+    }
+
+    header .signup {
+        grid-column: 8/10;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    header .signup .signup_link {
+        margin: 9px 92px 0px 0px;
+    }
+
+
+
+    header,
+    .section1 {
+        margin: 0px 55px;
+
+    }
+
+    .section1 .filtres {
+        margin-top: 27px;
+    }
+
+    .section1 .filtres a {
+        margin: 0 25px 5px 0;
+    }
+
+
+
+    .section1 .filtres br {
+        display: none;
+    }
+
+    .section1 .filtre_content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .section1 .input .icon2 i {
+        display: none;
+    }
+
+    .section1 .input {
+        width: 400px;
+    }
+
+    .section1 .input .icon1 {
+        border-radius: 15px 0 0 15px;
+    }
+
+    .section1 .input .icon2 {
+        width: 135px;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .section1 .input .icon2 .para {
+        display: block;
+        color: #FFF;
+        font-size: 1.2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+
+    .flex_sec2_sec3 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 80px;
+    }
+
+
+    .section2 .popular {
+        width: 92vw;
+        margin: 35px 0 40px 25px;
+    }
+
+    .section2 .card {
+        width: 85%;
+        margin: 25px auto;
+        height: 160px;
+
+    }
+
+    .section2 {
+        border-radius: 20px;
+        width: 30vw;
+        padding-bottom: 5px;
+        height: 90vh;
+        margin-top: 25px;
+        margin-left: 25px;
+
+    }
+
+
+    .section2 .popular {
+        width: 90%;
+        margin: 35px 0 54px 28px;
+
+    }
+
+    .section2 .card .card-content {
+        padding-left: 8px;
+
+    }
+
+    .section2 .card .card-content h3 {
+        width: 100%;
+        margin: 10px 0 10px 1px;
+        font-size: 0.9rem;
+
+    }
+
+    .section2 .card .card-content p {
+
+        margin: 0 0 0 1px;
+    }
+
+    .section2 .card .card-content .stars {
+        margin: 35% 0 0 1px;
+    }
+
+    .section2 .seconde_card .card-content .stars {
+        margin: 27% 0 0 1px;
+    }
+
+    .section3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 1fr 1fr 100px;
+        gap: 25px;
+        padding: 25px;
+        margin-top: 25px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        width: 70vw;
+        height: 90vh;
+
+    }
+
+    .section3 .card {
+        margin: 0;
+        height: 240px;
+
+    }
+
+    .section3 .card .card-content h3 {
+        margin: 2px 0 5px 15px;
+    }
+
+
+    .section3>h2 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin: 40px 0px 25px 0;
+
+    }
+
+    .section3>.card1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .section3>.card2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .section3>.card3 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .section3>.card4 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .section3>.card5 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .section3>.card6 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .section3>.see_more {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 100%;
+    }
+
+    .section3 .card .card-content .stars {
+        margin: 17px 0 0 15px;
+    }
+
+    /* fourth section */
+    .section4 {
+        margin: 0px 80px;
+    }
+
+    .section4 h2 {
+        margin: 40px 0px 40px 25px;
+    }
+
+
+
+    .section4 .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 50px;
+        width: 100%;
+        height: 500px;
+        padding: 0;
+    }
+
+    .section4 .card h3 {
+        font-size: 0.9rem;
+    }
+
+    .section4 .cards .card {
+        height: 100%;
+        margin: 0;
+    }
+
+
+    .section4 .cards .card1 {
+        grid-row: 1/10;
+        grid-column: 1/2;
+    }
+
+    .section4 .cards .card1 img {
+        height: 90%;
+
+    }
+
+    .section4 .cards .card2 {
+        grid-row: 1/6;
+        grid-column: 2/3;
+    }
+
+    .section4 .cards .card2 img {
+        height: 80%;
+
+
+    }
+
+    .section4 .cards .card3 {
+        grid-row: 6/10;
+        grid-column: 2/3;
+    }
+
+    .section4 .cards .card3 img {
+        height: 75%;
+
+    }
+
+    .section4 .cards .card4 {
+        grid-row: 1/10;
+        grid-column: 3/4;
+    }
+
+    .section4 .cards .card4 img {
+        height: 89.3%;
+
+    }
+
+    .section4 .cards .card5 {
+        grid-row: 1/5;
+        grid-column: 4/5;
+    }
+
+    .section4 .cards .card5 img {
+        height: 77%;
+
+    }
+
+    .section4 .cards .card6 {
+        grid-row: 5/10;
+        grid-column: 4/5;
+    }
+
+    .section4 .cards .card6 img {
+        height: 80.5%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px 5px 60px 80px;
+        margin-top: 40px;
+
+    }
+
+    
+}
