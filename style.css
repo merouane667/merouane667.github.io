@@ -568,7 +568,7 @@ header .signup {
 
 /* tablet design */
 
-@media only screen and (min-width:705px) and (max-width:1199px) {
+@media only screen and (min-width:705px) and (max-width:1299px) {
     .section1 .input .icon2 i {
         display: none;
     }
@@ -780,7 +780,7 @@ header .signup {
 }
 
 /* desktop design */
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1300px) {
     header {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -900,7 +900,7 @@ header .signup {
         border-radius: 20px;
         width: 30vw;
         padding-bottom: 5px;
-        height: 90vh;
+        height: 800px;
         margin-top: 25px;
         margin-left: 25px;
 
@@ -948,7 +948,7 @@ header .signup {
         background-color: #F2F2F2;
         border-radius: 20px;
         width: 70vw;
-        height: 90vh;
+        height: 800px;
 
     }
 
